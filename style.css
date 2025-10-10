@@ -146,6 +146,7 @@ h2, h3 {
                           justify-content: center;
                         }
                     }
+
 .dot {
        cursor: pointer;
        height: 15px;
@@ -206,4 +207,7 @@ h2, h3 {
             }
                         .prev:hover, .next:hover {
               background-color: rgba(0,0,0,0.8);
+            }
+            #studies{
+              
             }

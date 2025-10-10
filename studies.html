@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>josue website</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        /* Lightbox (small, scoped) */
+        .lb-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;z-index:9999}
+        .lb-overlay.active{display:flex}
+        .lb-content{position:relative;max-width:90%;max-height:90%;display:flex;align-items:center;justify-content:center}
+        .lb-content img{max-width:100%;max-height:100%;border-radius:4px;box-shadow:0 8px 30px rgba(0,0,0,0.7)}
+        .lb-close,.lb-prev,.lb-next{position:absolute;background:rgba(255,255,255,0.12);color:#fff;border:none;padding:8px;border-radius:4px;cursor:pointer}
+        .lb-close{top:12px;right:12px}
+        .lb-prev,.lb-next{top:50%;transform:translateY(-50%);width:44px;height:44px;display:flex;align-items:center;justify-content:center}
+        .lb-prev{left:12px}
+        .lb-next{right:12px}
+        .lb-caption{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);color:#fff;font-size:14px;opacity:0.9}
+        img.clickable{cursor:zoom-in;transition:transform .2s}
+        img.clickable:active{transform:scale(.99)}
+        </style>
+    </head>
+
+    <body>
+        <div id="all-contents" >
+            <nav >
+                <h1>Josue santos's website</h1>
+                <ul id="nav-ul" >
+                    <li class="nav-li" > 
+                        <a class="nav-a" href="index.html"> home </a>
+                    </li>
+                    <li class="nav-li" >
+                        <a href="portfolio.html"> portfolio </a>
+                    </li>
+                                        <li class="nav-li" >
+                        <a href="images.html"> photos </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="studies.html"> studies</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <!--sidebar section-->
+                <div class="sidebar">
+                </div>
+                <div class="content">
+                    <h1>Minesweeper</h1>
+                    <p>Minesweeper is a game were u click on tiles and try to find were the bombs are.If u click on a bomb you lose the game and have to restart.When u start u have to click on a tile (the first tile is free) and the number it gives u is how many bombs their are around it so if its a 2 and u have all 6 tiles then theirs a 33 percent chance their is a bomb around it. so u have to find ways to cover the tiles and find the bombs to complete the game. to start, start with the <strong>FIRST CLICK</strong></p>
+                    <img src="assets/FIrst-click.gif" width="450" height="300">
+                    <h2>Methods</h2>
+                    <p>some common methods to beat the game are using the corner of when u start the game(showen in the picture below) as you can see the one thats in the corner is a bomb because their is one tile around were their is supposed to be one bomb which you flag(right click) and since you found the bomb you go the the other ones around it and u clear the space( You can manuel do it or hit left click and right click at the same time make sure u flaged it before u do this.)their are many methods to beat the game but I kinda am bad and this is the main method i use </p>
+                    <img src="assets/method-corner.gif" width="450" height="300">
+                    <h2>Troubles in Minesweeper</h2>
+                    <p>some Troubles u can find in Minesweeper are somethings called 50/50 and these are like some of the most confusing things because its a fifty fifty chance to click a bomb or a free space. </p>
+                    <img src="data:image/png;base64,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">
+                    <h2>Patterns</h2>
+                    <p>In minesweeper their are many patterns to beat the game and their are so many that im not gonna name them all but some commons ones are 1-1, 1-1-1, 1-1-1-1, 2-1 1-2-1, 1-2-2-1,3 </p>
+                    <img src="assets/Patterns.png" width="500" height="300">
+                    <h2>video for more information</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ytKOmS8vJng?si=w156bSPbWtY5i97m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> 
+
+
+                <div class="stuides">
+                    
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
